@@ -1,0 +1,101 @@
+body{
+  background-color: #d5d3d3;
+  overflow-x: hidden;
+}
+#fond{
+  background-color: #7e397a;
+}
+#text{
+  color: white;
+  font-size: 3em;
+  padding-top: 10%;
+}
+#logo{
+  padding: 2% 40.5%
+}
+nav{
+
+  background-color:#70146a ;
+  padding: 5px;
+  margin: 0 -10%;
+}
+
+nav ul li a{
+  color: rgb(227, 227, 227);
+  text-decoration: none;
+  font-family: Comfortaa-Bold;
+}
+nav ul li a :hover{
+  color: white;
+}
+
+
+
+#lastFilmD{
+  padding:  2%;
+}
+
+#menu{
+  max-height: 100%;
+  background-color: #7e397a;
+  left: 15px;
+  margin-top: -25px;
+  padding: 0 0 1080px;
+  height: 100%;
+}
+#card{
+  background-color: #7e397a;
+  color: white;
+  text-align: center;
+}
+#card a{
+color: white;
+margin: 5px 0;
+}
+#cardButton{
+  background-color: #70146a;
+  color: white;
+}
+
+#cardHeader{
+  background-color: #70146a;
+  text-align: center;
+
+}
+
+#film {
+  background-color: white;
+
+}
+#film h1{
+  padding: 2% 0 0 2% ;
+}
+#DvD{
+  width: 20%;
+  margin: 2%;
+  text-align: center;
+  display: inline-block;
+}
+#imgDvd{
+  display: inline-block;
+  max-width: 65%;
+}
+#filmSynopsisD{
+  text-align: justify;
+  height: 200px;
+  max-height: 10%;
+  overflow-y: scroll;
+}
+#lienFilm{
+  padding-left: 15%;
+  font-size: 1em;
+  /*display: inline-block;*/
+}
+
+/*Fiche de style pour viewDvd*/
+
+#oneFilm{
+  top: 100px;
+  background-color: white;
+  border-radius: 5%;
+}
