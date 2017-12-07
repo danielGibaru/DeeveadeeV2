@@ -27,8 +27,78 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Connecte-toi</a>
+          <a class="nav-link" href="http://deeveadeev2.my/index.php/loginOrCreate/a">Connecte-toi</a>
         </li>
       </ul>
     </nav>
   </div>
+  <br>
+
+    <div class="row">
+
+      <div id="menu" class="col-2">
+        <div >
+        <div id="accordion" role="tablist">
+          <div id="card" class="card">
+            <div id= "cardHeader" class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a id= "cardButton" data-toggle="collapse" class="collapsed btn btn-light" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Genre
+                </a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div id="card" class="card">
+            <div id= "cardHeader" class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a id= "cardButton" class="collapsed btn btn-light" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Acteur
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+
+                  <?php foreach ($acteurByOrder as $acteurS): ?>
+                    <a href="<?= site_url('viewByActeur/'.$acteurS['id']); ?>"  class="btn btn-light"><?= $acteurS['prenomA'].$acteurS['nomA']; ?></a><br>
+                  <?php endforeach; ?>
+
+              </div>
+            </div>
+          </div>
+          <div id="card" class="card">
+            <div id= "cardHeader" class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a id= "cardButton" class="collapsed btn btn-light" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Realisateur
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <?php foreach ($realisateurByOrder as $realisateurs): ?>
+                  <a href="<?= site_url('viewByRealisateur/'.$realisateurs['id']); ?>"  class="btn btn-light"><?= $realisateurs['prenomR'].$realisateurs['nomR']; ?></a><br>
+                <?php endforeach; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <form id='formStyle'>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="votre pseudo">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Connecte toi!</button>
+      </form>
+    </div>
+    <div class="col-1">
+    </div>

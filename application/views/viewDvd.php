@@ -1,6 +1,4 @@
-<div class="row">
 
-  <div class="col-2"></div>
   <div id="oneFilm" class="col-8">
     <div class="row">
       <div class="col-4">
@@ -18,17 +16,16 @@
           echo $LienActeurClose; ?>
         </div>
         <h3>Acteur :</h3>
-          <?php foreach ($casting as $castingA): ?>
-            <?php if ($Dvd['id'] == $castingA['IDD']): ?>
+          <?php foreach ($castingActeurbyDvd as $casting): ?>
               <div class="row">
-              <?= '<a href="#">'.$acteur[$castingA['IDA']-1]['prenomA'].$acteur[$castingA['IDA']-1]['nomA'].' </a><p> Dans le role :'.$castingA['roleC'].'</p>';?><br>
+              <?= '<p> Dans le role: '.$casting['roleC'].'</p><a href="'.site_url('viewByActeur/'.$casting['IDA']).'"><p>-></p>'.$casting['prenomA'].' '.$casting['nomA'].' '.'</a>';?><br>
             </div>
-            <?php endif; ?>
           <?php endforeach; ?>
           <h3>Realisateur :</h3>
-          <a href="#"><?= $Dvd['realisateurD']; ?></a>
+          <a href="#"><?= $Dvd['prenomR'], $Dvd['nomR']; ?></a>
       </div>
     </div>
-  </div>s
-  <div class="col-2"></div>
+  </div>
+  <div class="col-1"></div>
+
 </div>

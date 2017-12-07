@@ -12,7 +12,7 @@ class dvdModel extends CI_Model{
   public $id;
   public $titreD;
   public $synopsisD;
-  public $realisateurD;
+  public $IDR;
   public $annéeD;
   public $imgD;
   public $backgroudD;
@@ -22,12 +22,19 @@ class dvdModel extends CI_Model{
   public $IDS;
 
 
-  public function get_dvd(){
+  public function getDvd($id = FALSE){
     $query = $this->db->get('dvd');
     return $query->result_array();
   }
+
   public function getDvdById($id){
-    $query = $this->db->get_where('dvd',array('id' => $id));
+    $this->db->join('realisateur', 'realisateur.id = dvd.IDR' ,'inner');
+    $query = $this->db->get_where('dvd',array('dvd.id' => $id));
+    return $query->row_array();
+  }
+  public function getDvdByIDR($IDR){
+    $this->db->join('realisateur', 'realisateur.id = dvd.IDR' ,'inner');
+    $query = $this->db->get_where('dvd',array('dvd.IDR' => $IDR));
     return $query->row_array();
   }
 }

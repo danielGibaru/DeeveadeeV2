@@ -3,7 +3,7 @@ body{
   overflow-x: hidden;
 }
 #fond{
-  background-color: #7e397a;
+  background-color: #b4c63a;
 }
 #text{
   color: white;
@@ -15,7 +15,7 @@ body{
 }
 nav{
 
-  background-color:#70146a ;
+  background-color:#879528 ;
   padding: 5px;
   margin: 0 -10%;
 }
@@ -29,22 +29,21 @@ nav ul li a :hover{
   color: white;
 }
 
-
-
 #lastFilmD{
-  padding:  2%;
+
+  padding: 2%;
 }
 
 #menu{
   max-height: 100%;
-  background-color: #7e397a;
+  background-color: #b4c63a;
   left: 15px;
   margin-top: -25px;
   padding: 0 0 1080px;
   height: 100%;
 }
 #card{
-  background-color: #7e397a;
+  background-color: #b4c63a;
   color: white;
   text-align: center;
 }
@@ -53,12 +52,12 @@ color: white;
 margin: 5px 0;
 }
 #cardButton{
-  background-color: #70146a;
+  background-color: #879528;
   color: white;
 }
 
 #cardHeader{
-  background-color: #70146a;
+  background-color: #879528;
   text-align: center;
 
 }
@@ -98,4 +97,23 @@ margin: 5px 0;
   top: 100px;
   background-color: white;
   border-radius: 5%;
+}
+
+/*Fiche de style pour form*/
+
+#formStyle{
+
+  background-color: white;
+  border-radius: 2%;
+}
+
+#formCreate{
+}
+
+/*Fiche de style footer*/
+
+#footer{
+  background-color:#879528 ;
+  padding: 5px;
+
 }

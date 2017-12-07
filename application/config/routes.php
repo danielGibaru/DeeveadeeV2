@@ -52,6 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'DeeveadeeController';
 
 $route['viewDvdBy/(:any)'] = 'DeeveadeeController/viewDvdBy/$1';
+$route['viewByActeur/(:any)'] = 'DeeveadeeController/viewActeurBy/$1';
+$route['viewByRealisateur/(:any)'] = 'DeeveadeeController/viewRealisateurBy/$1';
+$route['loginOrCreate/(:any)'] = 'UserController/index/$1';
+// $route['loginOrCreate/(:any)'] = 'UserController/addUser/$1';
+
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
