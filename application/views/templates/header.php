@@ -27,10 +27,30 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="http://deeveadeev2.my/index.php/loginOrCreate/a">Connecte-toi</a>
+          <!-- <a class="nav-link" href="http://deeveadeev2.my/index.php/loginOrCreate/a">Connecte-toi</a> -->
+          <a class="nav-link" id="login">Connecte-toi</a>
         </li>
       </ul>
     </nav>
+    <div id="formStyle" class="row justify-content-center">
+      <div class="col-5">
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="votre pseudo">
+            </div>
+            <div class="col">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary">Connecte toi!</button>
+            </div>
+            <a href="http://deeveadeev2.my/index.php/loginOrCreate/a">Pas encore des notres ?</a>
+            
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <br>
 
@@ -89,16 +109,16 @@
         </div>
       </div>
     </div>
-    <div>
-      <form id='formStyle'>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="votre pseudo">
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Connecte toi!</button>
-      </form>
-    </div>
+
     <div class="col-1">
     </div>
+<script>
+
+    $(document).ready(function(){
+
+      $('#login').click(function(){
+          $("#formStyle").toggle();
+      });
+    });
+
+  </script>
