@@ -20,7 +20,7 @@
     <nav>
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="http://deeveadeev2.my">Accueille</a>
+          <a class="nav-link" href="<?= site_url()?>">Accueille</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#nosDvd">Nos DvD</a>
@@ -33,20 +33,21 @@
       </ul>
     </nav>
     <div id="formStyle" class="row justify-content-center">
+
       <div class="col-5">
         <form>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="votre pseudo">
+              <input name="pseudoCL" type="text" class="form-control" placeholder="votre pseudo">
             </div>
             <div class="col">
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <input name="passwordCL" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <div class="col">
               <button type="submit" class="btn btn-primary">Connecte toi!</button>
             </div>
-            <a href="http://deeveadeev2.my/index.php/loginOrCreate/a">Pas encore des notres ?</a>
-            
+            <a href="<?= site_url()?>/loginOrCreate/a">Pas encore des notres ?</a>
+
           </div>
         </form>
       </div>

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://deeveadeeV2.my';
+$config['base_url'] = 'http://www.deeveadeeV2.my';
 
 /*
 |--------------------------------------------------------------------------

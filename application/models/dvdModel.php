@@ -20,9 +20,16 @@ class dvdModel extends CI_Model{
   public $dateAchatD;
   public $nombreD;
   public $IDS;
+  public $IDG1;
+  public $IDG2;
+  public $IDG3;
 
 
   public function getDvd($id = FALSE){
+    $this->db->select('*');
+    $this->db->join('genre1', 'genre1.id = dvd.IDG1', 'inner');
+    $this->db->join('genre2', 'genre2.id = dvd.IDG2', 'inner');
+    $this->db->join('genre3', 'genre3.id = dvd.IDG3', 'inner');
     $query = $this->db->get('dvd');
     return $query->result_array();
   }

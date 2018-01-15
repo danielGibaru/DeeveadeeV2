@@ -20,6 +20,7 @@
         <h1 id="nosDvd" >Nos DVD </h1>
         <div class="card-group">
           <?php foreach ($Dvd as $DvdI): ?>
+
             <div id="DvD" class="card col-4">
               <h4 class="card-title"><?= $DvdI['titreD'] ?></h4>
               <a href="<?= site_url('viewDvdBy/'.$DvdI['id']); ?>" class="thumbnail">
@@ -30,12 +31,9 @@
                 <div id="filmSynopsisD">
                   <p class="card-text"><?= $DvdI['synopsisD'] ?></p>
                 </div>
-                <div id="lienFilm" class="row">
-                  <?php
-                  $LienActeur = str_replace("%" , '<a href="">', $DvdI['categorieD']  );
-                  $LienActeurClose = str_replace("/", "<a/> <p> / </p> ",$LienActeur);
-                  echo $LienActeurClose; ?>
-                </div>
+                  <a href="#"><?= $DvdI['genre1']?></a>
+                <a href="#"><?= $DvdI['genre2']?></a>
+                <a href="#"><?= $DvdI['genre3']?></a>
               </div>
             </div>
           <?php endforeach; ?>

@@ -102,8 +102,9 @@ margin: 5px 0;
 /*Fiche de style pour form*/
 
 #formStyle{
-
-  background-color: #b4c63a;
+  display: none;
+  color: white;
+  background-color: #879528;
   border-radius: 2%;
 }
 
